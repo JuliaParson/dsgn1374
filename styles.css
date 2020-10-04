@@ -8,7 +8,14 @@ body {
   max-width: 100%;
   margin: 0;
   padding: 0.5em;
-  background: lightgrey;
-  color: black;
+  background: #3F51B5;
+  color: #f48db0;
   font-family: helvetica, arial, roboto, sans-serif;
+}
+
+h1 {
+	text-align: center;
+	font-weight: bold;
+	font-size: 32px;
+	border: 2px solid #f48db0;
 }
