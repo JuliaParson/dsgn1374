@@ -1,0 +1,53 @@
+/* Images */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: Black;
+	color: black;
+	font-family: 'Nosifer', cursive, sans-serif;
+	font-weight: normal;
+	line-height: 1.4;
+	font-size: 16px;
+	margin: 0.25em;
+}
+
+img {
+	max-width: 100%;
+}
+
+.header {
+	display: block;
+  text-align: center;
+  background: black;
+  color: red;
+  font-size: 20px;
+  margin-left: 20em;
+  margin-right: 20em;
+}
+
+.warning {
+  text-align: center;
+  font-family: 'Creepster', cursive, sans-serif;
+  background: black;
+  color: red;
+  font-size: 30px;
+}
+
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.item {
+	width: 25%;
+	padding: 0.25em;
+}
+
+.gif {  
+	width: 33%;
+	padding: 0.30em;
+}
+
