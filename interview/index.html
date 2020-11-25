@@ -1,7 +1,74 @@
 <!DOCTYPE html>
 <head>
-	<title>A website is never finished</title>
+	<title>Interview</title>
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;600&display=swap" rel="stylesheet">
+
 </head>
 <body>
-	<p>Please check back later.</p>
+	<main>
+	<img src="img/banner.jpg" alt="banner" class="banner">
+
+<div class="tab">
+  <button class="tablinks" onclick="openQuestion(event, 'q1')" id="defaultOpen">Julia Parson: What are your interests?</button>
+  <button class="tablinks" onclick="openQuestion(event, 'q2')">JP: Why graphic design?</button>
+  <button class="tablinks" onclick="openQuestion(event, 'q3')">JP: What makes a good graphic designer?</button>
+  <button class="tablinks" onclick="openQuestion(event, 'q4')">JP: What is your favourite part of the design process?</button>
+  <button class="tablinks" onclick="openQuestion(event, 'q5')">JP: How do you work when under pressure?</button>
+  <button class="tablinks" onclick="openQuestion(event, 'q6')">JP: Where do you see yourself 2 years from now?</button>
+  <button class="tablinks" onclick="openQuestion(event, 'q7')">JP: Is there anything you would want to tell aspiring graphic designers who are still on the edge about pursuing it?</button>
+</div>
+
+<div id="q1" class="tabcontent">
+  <p class="p"><span style="color:#ffa69e;font-weight:bold">Jamie Wells: </span>As of right now I really like playing video games and seeing all the effort put into how they’re created. Especially story-heavy ones just because I love movies, but with video games, you get to be the person. You’re thrown into this different universe and you get so much more attached than you do with movies. The fact that they’re able to trigger so much emotion from people is really impressive.</p>
+</div>
+
+<div id="q2" class="tabcontent">
+  <p class="p"><span style="color:#ffa69e;font-weight:bold">JW: </span>When I hit grade 12 I still wasn’t sure what I wanted to do, but I had one class, in particular, that was my favourite. That was communications technology. I knew I didn’t want to settle for a job I didn’t like so I looked into career opportunities that held the same aspects and topics that class had. Graphic design ticked off just about everything I had on the list of what I liked, so I decided to give it a shot and I definitely don’t regret it.</p> 
+</div>
+
+<div id="q3" class="tabcontent">
+  <p class="p"><span style="color:#ffa69e;font-weight:bold">JW: </span>I think versatility and creative thinking is what makes a good graphic designer. I think this because when you’re working on a project you have to remember that a lot of things have already been done. You have to be able to come up with new outside of the box ideas to capture peoples attention. That can be hard but I think as long as you’re willing to try new things and take on trial and error you will excel in what you do and create. </p>
+</div>
+
+<div id="q4" class="tabcontent">
+  <p class="p"><span style="color:#ffa69e;font-weight:bold">JW: </span>My favourite part would be the preliminary work. Starting a new project and trying to generate as many different ideas as I can is really cool to see. After that everything just starts to come together. Another part about preliminary work that I enjoy is the fact that you can take one way at the beginning but by the end you might have a totally different product. It’s unpredictable. </p>
+</div>
+
+<div id="q5" class="tabcontent">
+  <p class="p"><span style="color:#ffa69e;font-weight:bold">JW: </span>Honestly, I hate to say it but I’m a lot more productive when I am under pressure. I hate it because I get anxious and nervous,  but I love it as well because of the accomplished feeling I get when I finally finish something despite it being a burden in my life 5 seconds ago. I just feel my work is more well done and triple checked when I’m trying to finish it quicker. </p>
+</div>
+
+<div id="q6" class="tabcontent">
+  <p class="p"><span style="color:#ffa69e;font-weight:bold">JW: </span>I still am not sure what field in graphic design I want to focus on since there are so many to choose from, but I feel after finishing off my schooling I’ll know for sure. So hopefully by then I’ll have found my passion and am working steadily either freelance or for a company with a business on the side selling my designs just for fun! </p>
+</div>
+
+<div id="q7" class="tabcontent">
+  <p class="p"><span style="color:#ffa69e;font-weight:bold">JW: </span>Yes, actually I would want them to know you don’t need to be a great artist right off the hop. One of the big things that worried me and held me back from applying to school for graphic design was the fact that I wasn’t a very good artist. I knew my way around a computer pretty well and I loved using Adobe products like Illustrator and Photoshop, but when it came to pencil and paper I wasn’t great. I quickly learned that it didn’t matter. Even if you aren’t the greatest, you will learn and if you’re better on the computer most projects are done on there anyway! Your professors will teach you what you need to know and you will probably find different paths within said career that don’t even need excellent hand-drawn work. </p>
+</div>
+
+<script>
+function openQuestion(evt, Question) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(Question).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+document.getElementById("defaultOpen").click();
+</script>
+
+<div class="thank">Thanks for reading!</div>
+   
+
+	</main>
 </body>
