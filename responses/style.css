@@ -1,0 +1,211 @@
+/* Responses */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: grey;
+	color: white;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: 200;
+	line-height: 2.4;
+	font-size: 24px;
+	margin: 3.25em;
+	padding: 0;
+}
+
+img {
+	max-width: 20%;
+	height: auto;
+	display:inline-block;
+    margin:0px 24px;
+}
+
+
+header {
+	position: absolute;
+    top: 7px;
+    left: 51px;
+    width: 100%;
+    height: 67px;
+}
+
+h1 {
+    display: block;
+    font-size: 1.9em;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    margin-block-start: 7.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 13%;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    animation: text 3s 1;
+}
+
+h2 {
+    display: block;
+    font-size: 1.7em;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    margin-block-start: 2.67em;
+    margin-block-end: 0.67em;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    animation: text 3s 1;
+}
+
+h3 {
+    display: block;
+    font-size: 1em;
+    color: #515252;
+    margin-block-start: 1.67em;
+    margin-block-end: 0.67em;
+    margin-inline-end: 0px;
+    font-weight: 200;
+}
+
+h4 {
+    display: block;
+    font-size: 1em;
+    color: #515252;
+    font-weight: 400;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-end: 0px;
+    -ms-transform: skewX(20deg); /* IE 9 */
+  	transform: skewX(20deg);
+}
+
+h4 {
+  position: relative;
+  animation-name: water;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes water {
+  0%   {left:0px; top:0px;}
+  50%  {left:0px; top:40px;}
+  100%  {left:0px; top:0px;}
+}
+
+h5 {
+    display: block;
+    font-size: 1.3em;
+    color: #515252;
+    margin-block-start: 1.67em;
+    margin-block-end: 0.67em;
+    margin-inline-end: 0px;
+    font-weight: 200;
+    text-shadow: 2px 2px #cac1c1;
+}
+
+.questions {
+        color: #464545;
+        font-weight: bold;
+
+}
+
+.grow:hover
+{
+		text-align: center;
+        -webkit-transform: scale(1.4);
+        -ms-transform: scale(1.4);
+        transform: scale(1.4);
+        color: pink;
+}
+
+h3 {
+    animation-duration: 8s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slidein {
+  0% {
+    margin-left: 0%;
+  }
+  50% {
+    margin-left: 300px;
+  }
+  100% {
+    margin-left: 0%;
+  }
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 23px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+@keyframes text {
+	0% {
+		color: grey;
+		margin-bottom: -40px;
+	}
+	30% {
+		letter-spacing: 13px;
+		margin-bottom: -40px;
+	}
+	85% {
+		letter-spacing: 8px;
+		margin-bottom: -40px;
+	}
+}
+.movetext {
+	  animation: movetext 5s 2;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes movetext {
+  0%   {background: left: 0px; top: 0px;}
+  25%  {background: left: 0px; top: 200px;}
+  100% {background: left: 0px; top: 0px;}
+}
+
+
+
+
+
+
+
+
+
+
+
